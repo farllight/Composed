@@ -16,6 +16,10 @@
 		86B2B35C242A9E3200E91192 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86B2B35A242A9E3200E91192 /* Main.storyboard */; };
 		86B2B35E242A9E3400E91192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86B2B35D242A9E3400E91192 /* Assets.xcassets */; };
 		86B2B361242A9E3400E91192 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86B2B35F242A9E3400E91192 /* LaunchScreen.storyboard */; };
+		86B2B367242A9FD400E91192 /* ComposedTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B2B366242A9FD400E91192 /* ComposedTableViewDataSource.swift */; };
+		86B2B36B242AA0A700E91192 /* ComposableTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B2B36A242AA0A700E91192 /* ComposableTableViewDataSource.swift */; };
+		86B2B36E242AA10700E91192 /* ComposedCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B2B36D242AA10700E91192 /* ComposedCollectionViewDataSource.swift */; };
+		86B2B370242AA12900E91192 /* ComposableCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B2B36F242AA12900E91192 /* ComposableCollectionViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,10 @@
 		86B2B35D242A9E3400E91192 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86B2B360242A9E3400E91192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86B2B362242A9E3400E91192 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86B2B366242A9FD400E91192 /* ComposedTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposedTableViewDataSource.swift; sourceTree = "<group>"; };
+		86B2B36A242AA0A700E91192 /* ComposableTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposableTableViewDataSource.swift; sourceTree = "<group>"; };
+		86B2B36D242AA10700E91192 /* ComposedCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposedCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		86B2B36F242AA12900E91192 /* ComposableCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposableCollectionViewDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,7 @@
 		86B2B336242A9DC300E91192 /* Composed */ = {
 			isa = PBXGroup;
 			children = (
+				86B2B368242AA06900E91192 /* Composed */,
 				86B2B337242A9DC300E91192 /* Composed.h */,
 				86B2B338242A9DC300E91192 /* Info.plist */,
 			);
@@ -121,6 +130,33 @@
 				86B2B362242A9E3400E91192 /* Info.plist */,
 			);
 			path = ComposedExample;
+			sourceTree = "<group>";
+		};
+		86B2B368242AA06900E91192 /* Composed */ = {
+			isa = PBXGroup;
+			children = (
+				86B2B36C242AA0E000E91192 /* ComposedCollectionViewDataSource */,
+				86B2B369242AA08C00E91192 /* ComposedTableViewDataSource */,
+			);
+			path = Composed;
+			sourceTree = "<group>";
+		};
+		86B2B369242AA08C00E91192 /* ComposedTableViewDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				86B2B366242A9FD400E91192 /* ComposedTableViewDataSource.swift */,
+				86B2B36A242AA0A700E91192 /* ComposableTableViewDataSource.swift */,
+			);
+			path = ComposedTableViewDataSource;
+			sourceTree = "<group>";
+		};
+		86B2B36C242AA0E000E91192 /* ComposedCollectionViewDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				86B2B36D242AA10700E91192 /* ComposedCollectionViewDataSource.swift */,
+				86B2B36F242AA12900E91192 /* ComposableCollectionViewDataSource.swift */,
+			);
+			path = ComposedCollectionViewDataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +238,7 @@
 				TargetAttributes = {
 					86B2B333242A9DC300E91192 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					86B2B33C242A9DC400E91192 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -263,6 +300,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86B2B36E242AA10700E91192 /* ComposedCollectionViewDataSource.swift in Sources */,
+				86B2B367242A9FD400E91192 /* ComposedTableViewDataSource.swift in Sources */,
+				86B2B370242AA12900E91192 /* ComposableCollectionViewDataSource.swift in Sources */,
+				86B2B36B242AA0A700E91192 /* ComposableTableViewDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +478,7 @@
 		86B2B349242A9DC400E91192 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LS94793B4U;
@@ -453,6 +495,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = farllight.Composed;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +504,7 @@
 		86B2B34A242A9DC400E91192 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LS94793B4U;
@@ -485,6 +529,7 @@
 		86B2B34C242A9DC400E91192 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LS94793B4U;
 				INFOPLIST_FILE = ComposedTests/Info.plist;
@@ -503,6 +548,7 @@
 		86B2B34D242A9DC400E91192 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LS94793B4U;
 				INFOPLIST_FILE = ComposedTests/Info.plist;
