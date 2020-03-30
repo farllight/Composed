@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol ComposableCollectionViewDataSource: class, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+protocol ComposableCollectionViewDataSource: class, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     var isHidden: Bool { get set }
     //Cell type
     var cellTypes: [UICollectionViewCell.Type] { get }
