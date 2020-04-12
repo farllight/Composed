@@ -30,5 +30,6 @@ public extension UITableView {
     func setComposedDataSource(_ dataSource: ComposedTableViewDataSource) {
         self.register(dataSource.cellTypes)
         self.dataSource = dataSource
+        self.delegate = dataSource
     }
 }
